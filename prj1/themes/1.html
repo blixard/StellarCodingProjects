@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <script>
+            function dis(val){
+                document.getElementById("res").value+=val;
+                }
+            function clr(){
+                document.getElementById("res").value="";
+            }
+            function equals(){
+                x = document.getElementById("res").value;
+                y=eval(x);
+                document.getElementById("res").value = y; 
+            }
+            function back(){
+                te = document.getElementById("res").value; 
+                x = te.slice(0,-1);
+                document.getElementById("res").value=x;
+            }
+
+        </script>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .btnn:hover{
+                background-color: aquamarine;
+            }
+            .calc{
+                display: flex;
+                align-items: flex-start;
+                margin: auto;
+                text-shadow: 10ch;
+                font: outline;
+                font-style: italic;
+                font-weight: bold;
+                font-size: xx-large;
+                color: rgb(15, 27, 15);
+                text-align: center;
+                border: solid black 20px;
+                width: 50%;
+            }
+            input[type ="button"]{
+                width: 100%;
+                height:100%;
+                text-align: center;
+                font-size: xx-large;
+                
+
+            }
+            input[type="text"]{
+                background-color: bisque;
+                width: 100%;
+                height: 100%;
+                text-size-adjust: 100%;
+                text-align: center;
+                font-size: xx-large;
+                
+            }
+            .tab{
+                width: 100%;
+                height: 90%;
+            }
+            body{
+            }
+            .tab.cb{
+                color: brown;
+            }
+
+
+        </style>
+    </head>
+    <body >
+        
+        <button class="btnn" onclick="window.location.href='https://blixard.github.io/projects/calculator%20web/calculator2.html'">THEME</button>
+        
+        <table style="border: 1; align:center ;"  class="tab">
+            <tr>
+                
+                <td colspan="4"><input type="text" id="res"></td>
+                <td rowspan="3" class="cb "><input type="button" value="C" onclick="clr()" class="sss btn btn-secondary"></td>
+               
+            </tr>
+            <tr>
+                <td ><input type="button"  class="sss btn btn-secondary" value="1" onclick="dis(value)" /></td>
+                <td><input type="button"  class="sss btn btn-secondary" value="2" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary"value="3" onclick="dis(value)" /></td>
+                <td><input type="button"  class="sss btn btn-secondary" value="/" onclick="dis(value)" /></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button"  class="sss btn btn-secondary" value="4" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="5" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="6" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="*" onclick="dis(value)" /></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button"  class="sss btn btn-secondary"  value="7" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="8" onclick="dis(value)" /></td>
+                <td><input type="button"  class="sss btn btn-secondary" value="9" onclick="dis(value)" /></td>
+                <td><input type="button"  class="sss btn btn-secondary" value="+" onclick="dis(value)" /></td>
+                <td rowspan="2" style="color: brown;" ><input type="button" class="sss btn btn-secondary" value="back" onclick="back()"></td>
+            </tr>
+            <tr>
+                <td><input type="button"  class="sss btn btn-secondary" value="0" onclick="dis(value)" /></td>
+                <td><input type="button"  class="sss btn btn-secondary" value="." onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="-" onclick="dis(value)" /></td>
+                <td><input type="button"   class="sss btn btn-secondary" value="=" onclick="equals()" /></td>
+            </tr>
+            
+        </table>
+    </body>
+</html>

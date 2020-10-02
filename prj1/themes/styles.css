@@ -1,0 +1,30 @@
+            *{
+                margin: 5;
+                padding: 15;
+                background-color:#89f0c1 ;
+                    
+            }
+
+        .button {
+                width: 65;
+                height: 60;
+                background-color: darkblue;
+                color: white;
+                text-align: center;
+                font-size: 28px;
+                align-content: center;
+                
+            }
+
+        .textview
+        {
+                width: 300;
+                margin: 11;
+                font-size: 25;
+                padding: 8;
+                background-image: linear-gradient(orange, white, green);
+        }
+<div1>
+
+</div1>
+
